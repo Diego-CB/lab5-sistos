@@ -1,0 +1,1 @@
+cmd_arch/x86/kernel/vsyscall-int80_32.so := gcc -m32 -m elf_i386 -nostdlib -shared -s -Wl,-soname=linux-gate.so.1  -Wl,--hash-style=sysv -Wl,-T,arch/x86/kernel/vsyscall_32.lds arch/x86/kernel/vsyscall-int80_32.o arch/x86/kernel/vsyscall-note_32.o -o arch/x86/kernel/vsyscall-int80_32.so
